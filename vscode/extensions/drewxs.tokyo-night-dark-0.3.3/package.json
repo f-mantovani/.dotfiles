@@ -1,0 +1,59 @@
+{
+	"name": "tokyo-night-dark",
+	"displayName": "Tokyo Night Dark",
+	"description": "Darker version of Tokyo Night Dark",
+	"version": "0.3.3",
+	"publisher": "drewxs",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kito0/tokyo-night-dark"
+	},
+	"bugs": {
+		"url": "https://github.com/kito0/tokyo-night-dark/issues"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"tokyo",
+		"night",
+		"dark"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tokyo Night Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/tokyo-night-dark-color-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"package": "vsce package",
+		"publish": "vsce publish",
+		"release": "standard-version"
+	},
+	"devDependencies": {
+		"standard-version": "^9.5.0"
+	},
+	"__metadata": {
+		"id": "e5a3a1b5-6ba9-4860-99b9-ea75c8cff848",
+		"publisherId": "ee8fe7b3-fb93-4f8a-8bd5-18c610e201de",
+		"publisherDisplayName": "Andrew X. Shah",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1722240948427,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 411488
+	}
+}

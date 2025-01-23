@@ -1,0 +1,55 @@
+version = 3
+
+[transient_prompt]
+  template = ' '
+  foreground = '#ffffff'
+  background = 'transparent'
+  foreground_templates = ['{{ if gt .Code 0 }}#ef5350{{ end }}']
+
+[[blocks]]
+  type = 'rprompt'
+
+  [[blocks.segments]]
+    template = ' {{ .CurrentDate | date .Format }} '
+    foreground = '#00C5C7'
+    type = 'time'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      time_format = '15:04:05'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    template = '{{ .Path }} '
+    foreground = '#77E4F7'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      style = 'full'
+
+  [[blocks.segments]]
+    template = '{{ .HEAD }} '
+    foreground = '#FFE700'
+    type = 'git'
+    style = 'plain'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+    [[blocks.segments]]
+    foreground = '#21c7c7'
+    type = 'text'
+    style = 'plain'
+
+
+  [[blocks.segments]]
+    template = '❯ '
+    foreground = '#43D426'
+    type = 'text'
+    style = 'plain'

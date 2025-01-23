@@ -1,0 +1,63 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.defaultProfile.windows": "Nushell",
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontLigatures": "'cv13', 'cv31', 'cv16', 'cv18', 'ss05', 'cv14'",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled":true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+
+  "terminal.integrated.profiles.windows": {
+    "Nushell": {
+      "path": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",
+      "args": []
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.autofetch": true,
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "supermaven.enable": {
+    "*": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "glassit.alpha": 230,
+  "workbench.colorTheme": "Tokyo Night Dark",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "on",
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false
+}

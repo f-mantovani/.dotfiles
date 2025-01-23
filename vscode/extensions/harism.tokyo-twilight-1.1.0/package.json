@@ -1,0 +1,49 @@
+{
+	"name": "tokyo-twilight",
+	"displayName": "Tokyo Twilight",
+	"description": "Dark, calm theme inspired by Tokyo Night.",
+	"publisher": "harism",
+	"version": "1.1.0",
+	"license": "MIT",
+	"icon": "./icon.png",
+	"galleryBanner": {
+		"color": "#1c1c1f",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/harismh/tokyo-twilight"
+	},
+	"bugs": {
+		"url": "https://github.com/harismh/tokyo-twilight/issues"
+	},
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tokyo Twilight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Tokyo Twilight-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "7e1891a4-55bb-4ed2-8248-75d5c632fd49",
+		"publisherId": "772c1d43-2eed-4111-9d2a-5ae4a32d10c1",
+		"publisherDisplayName": "harism",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1736349176639,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 173142
+	}
+}
