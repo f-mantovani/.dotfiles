@@ -1,0 +1,12 @@
+[user]
+	email = 92172133+f-mantovani@users.noreply.github.com
+	name = f-mantovnai
+[credential]
+	modalprompt = false
+[core]
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
+[credential "helperselector"]
+	selected = manager

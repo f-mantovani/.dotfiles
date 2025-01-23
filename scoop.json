@@ -1,0 +1,334 @@
+{
+    "config": {
+        "scoop_repo": "https://github.com/ScoopInstaller/Scoop",
+        "scoop_branch": "master"
+    },
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2025-01-23T13:31:57+01:00",
+            "Manifests": 1356
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2025-01-23T13:34:16+01:00",
+            "Manifests": 2120
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2025-01-23T13:55:00+01:00",
+            "Manifests": 476
+        },
+        {
+            "Name": "nerd-fonts",
+            "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+            "Updated": "2025-01-18T16:19:36+01:00",
+            "Manifests": 345
+        },
+        {
+            "Name": "nonportable",
+            "Source": "https://github.com/ScoopInstaller/Nonportable",
+            "Updated": "2025-01-23T13:54:34+01:00",
+            "Manifests": 127
+        }
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Updated": "2024-12-09T10:44:32.4181726+01:00",
+            "Name": "7zip",
+            "Version": "24.09",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-17T10:38:39.4068557+01:00",
+            "Name": "7zip19.00-helper",
+            "Version": "19.00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T14:19:07.1329191+01:00",
+            "Name": "act",
+            "Version": "0.2.71",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-08T15:08:03.2619188+01:00",
+            "Name": "bat",
+            "Version": "0.25.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-09-20T10:05:52.123754+02:00",
+            "Name": "brotli",
+            "Version": "1.1.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T17:19:56.6826499+01:00",
+            "Name": "btop",
+            "Version": "1.0.4",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-08T10:21:45.1720852+01:00",
+            "Name": "cacert",
+            "Version": "2024-12-31",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-09T16:24:14.9095901+01:00",
+            "Name": "dark",
+            "Version": "3.14",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T12:41:00.7119665+01:00",
+            "Name": "everything",
+            "Version": "1.4.1.1026",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-23T14:41:15.253872+01:00",
+            "Name": "eza",
+            "Version": "0.20.18",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-10-28T18:03:03.9373752+01:00",
+            "Name": "fd",
+            "Version": "10.2.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-06-03T14:59:43.5536828+02:00",
+            "Name": "FiraCode",
+            "Version": "6.2",
+            "Source": "nerd-fonts"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-11-20T10:09:49.1286965+01:00",
+            "Name": "FiraCode-NF-Mono",
+            "Version": "3.3.0",
+            "Source": "nerd-fonts"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T10:50:15.0134514+01:00",
+            "Name": "fzf",
+            "Version": "0.58.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-06-13T15:56:12.3494888+02:00",
+            "Name": "gcc",
+            "Version": "13.2.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-10-28T18:09:40.1354727+01:00",
+            "Name": "gzip",
+            "Version": "1.3.12",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-23T14:41:15.96605+01:00",
+            "Name": "innounp",
+            "Version": "2.64",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-10T14:42:17.8845613+01:00",
+            "Name": "insomnia",
+            "Version": "10.3.0",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T10:55:37.0157889+01:00",
+            "Name": "latex",
+            "Version": "24.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T10:50:17.0208109+01:00",
+            "Name": "lazygit",
+            "Version": "0.45.2",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-16T15:10:23.2936757+01:00",
+            "Name": "make",
+            "Version": "4.4.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-08T10:22:02.4462654+01:00",
+            "Name": "notion",
+            "Version": "4.3.0",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-10T14:43:25.3904041+01:00",
+            "Name": "nu",
+            "Version": "0.101.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-06-03T11:28:22.4734027+02:00",
+            "Name": "nvs",
+            "Version": "1.7.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-23T14:44:00.00095+01:00",
+            "Name": "oh-my-posh",
+            "Version": "24.18.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T10:50:59.0525575+01:00",
+            "Name": "pandoc",
+            "Version": "3.6.2",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T17:16:51.7142914+01:00",
+            "Name": "poetry",
+            "Version": "2.0.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-17T10:39:55.8086175+01:00",
+            "Name": "postgresql",
+            "Version": "17.2",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-09T16:32:14.0801415+01:00",
+            "Name": "python",
+            "Version": "3.13.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-22T14:31:37.7112405+01:00",
+            "Name": "responsively",
+            "Version": "1.16.0",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-10-28T18:09:35.3486752+01:00",
+            "Name": "ripgrep",
+            "Version": "14.1.1",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T14:04:56.6689673+01:00",
+            "Name": "sharex",
+            "Version": "17.0.0",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T09:59:36.3104894+01:00",
+            "Name": "sqlite",
+            "Version": "3.48.0",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-23T14:41:28.7308383+01:00",
+            "Name": "tabby",
+            "Version": "1.0.221",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T09:59:38.073165+01:00",
+            "Name": "tree-sitter",
+            "Version": "0.24.7",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-10-28T18:09:35.8961746+01:00",
+            "Name": "unzip",
+            "Version": "6.00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-11-13T09:57:14.6017451+01:00",
+            "Name": "vcredist2022",
+            "Version": "14.42.34433.0",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-17T10:12:13.9284052+01:00",
+            "Name": "vscode",
+            "Version": "1.96.4",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2024-10-28T18:09:41.4619401+01:00",
+            "Name": "wget",
+            "Version": "1.21.4",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-15T12:40:30.0493807+01:00",
+            "Name": "wox",
+            "Version": "1.3.524",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-23T14:41:33.5133205+01:00",
+            "Name": "zed-nightly",
+            "Version": "20250123",
+            "Source": "versions"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-01-08T15:03:06.0550969+01:00",
+            "Name": "zoxide",
+            "Version": "0.9.6",
+            "Source": "main"
+        }
+    ]
+}
