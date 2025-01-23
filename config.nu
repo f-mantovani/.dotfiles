@@ -16,9 +16,8 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
-$env.Path = ($env.Path | prepend 'C:\Program Files\Git\usr\bin')
-alias codium = start C:\Users\Felipe\scoop\apps\vscodium\current\VSCodium.exe
-$env.config.buffer_editor = "nvim"
+
+$env.config.buffer_editor = "codium"
 
 source ~/.zoxide.nu
 
