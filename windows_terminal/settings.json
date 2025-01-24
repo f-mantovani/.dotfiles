@@ -120,6 +120,13 @@
                 "startingDirectory": "C:\\Users\\Felipe"
             },
             {
+                "name": "MSYS2 (Fish)",
+                "commandline": "C:\\msys64\\usr\\bin\\fish.exe --login",
+                "startingDirectory": "C:\\Users\\Felipe",
+                "icon": "C:\\msys64\\msys2.ico",
+                "guid": "{096e7607-ab82-4a8d-aa69-de9ee4d8aa9f}"
+            },
+            {
                 "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\Felipe\\anaconda3\\Scripts\\activate.bat C:\\Users\\Felipe\\anaconda3",
                 "guid": "{e78b37b4-0017-568b-9279-1abde5e14cde}",
                 "icon": "C:\\Users\\Felipe\\anaconda3\\Menu\\anaconda_prompt.ico",

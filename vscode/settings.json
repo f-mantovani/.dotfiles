@@ -5,6 +5,11 @@
   "editor.fontLigatures": "'cv13', 'cv31', 'cv16', 'cv18', 'ss05', 'cv14'",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
   "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.linkedEditing": true,
+  "workbench.colorCustomizations": {
+    "editor.background": "#00000060",
+  },
   "terminal.integrated.fontSize": 14,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.variableTypes.enabled": true,
@@ -55,10 +60,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "glassit.alpha": 230,
-  "workbench.colorTheme": "Tokyo Night Dark",
+  "workbench.colorTheme": "Tokyo Night",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.wordWrap": "on",
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "glassit.force_sway": true
 }
