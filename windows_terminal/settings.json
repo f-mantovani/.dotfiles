@@ -44,7 +44,10 @@
     ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "colorScheme": "Tokyo Night"
+        },
         "list": 
         [
             {
@@ -120,11 +123,11 @@
                 "startingDirectory": "C:\\Users\\Felipe"
             },
             {
-                "name": "MSYS2 (Fish)",
                 "commandline": "C:\\msys64\\usr\\bin\\fish.exe --login",
-                "startingDirectory": "C:\\Users\\Felipe",
+                "guid": "{096e7607-ab82-4a8d-aa69-de9ee4d8aa9f}",
                 "icon": "C:\\msys64\\msys2.ico",
-                "guid": "{096e7607-ab82-4a8d-aa69-de9ee4d8aa9f}"
+                "name": "MSYS2 (Fish)",
+                "startingDirectory": "C:\\Users\\Felipe"
             },
             {
                 "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\Felipe\\anaconda3\\Scripts\\activate.bat C:\\Users\\Felipe\\anaconda3",
@@ -134,7 +137,7 @@
                 "startingDirectory": "C:\\Users\\Felipe"
             },
             {
-                "colorScheme": "Tokyo Night",
+                "colorScheme": "Twilight",
                 "commandline": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",
                 "cursorShape": "filledBox",
                 "elevate": false,

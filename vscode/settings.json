@@ -18,7 +18,9 @@
   "typescript.inlayHints.variableTypes.enabled":true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
   "terminal.integrated.profiles.windows": {
     "Nushell": {
       "path": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",
@@ -66,5 +68,9 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "glassit.force_sway": true
+  "glassit.force_sway": true,
+  "terminal.integrated.fontLigatures": true,
+  "[python]": {
+    "editor.defaultFormatter": "mikoz.black-py"
+  }
 }
