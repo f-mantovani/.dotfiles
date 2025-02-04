@@ -18,9 +18,6 @@
   "typescript.inlayHints.variableTypes.enabled":true,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "python.analysis.inlayHints.callArgumentNames": "all",
-  "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
   "terminal.integrated.profiles.windows": {
     "Nushell": {
       "path": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",

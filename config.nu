@@ -19,6 +19,8 @@
 
 $env.config.buffer_editor = "codium"
 
+$env.config.shell_integration.osc133 = false
+
 source ~/.zoxide.nu
 
 source ~/.my-theme.nu
