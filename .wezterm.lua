@@ -11,9 +11,8 @@ config.font = wezterm.font {
     harfbuzz_features = { 'calt=1', 'liga=1', 'clig=1', 'cv13', 'cv31', 'cv16', 'cv18', 'ss05' }
 }
 
-config.window_background_opacity = 0.95
--- config.win32_system_backdrop = 'Tabbed'
--- config.macos_window_background_blur = 20
+local opacity = 0.80
+config.window_background_opacity = opacity
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 
