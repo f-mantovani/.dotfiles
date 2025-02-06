@@ -10,7 +10,7 @@ $env.POSH_SESSION_ID = (echo "63775dd7-2a6f-4e78-b4a4-e5492b6a4d0f")
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 
-let _omp_executable: string = (echo "C:/Users/Felipe/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe")
+let _omp_executable: string = (echo "C:/Users/Felipe/scoop/shims/oh-my-posh")
 
 # PROMPTS
 
