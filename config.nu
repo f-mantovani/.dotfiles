@@ -17,7 +17,7 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.config.buffer_editor = "codium"
+$env.config.buffer_editor = "nvim"
 
 $env.config.shell_integration.osc133 = false
 
