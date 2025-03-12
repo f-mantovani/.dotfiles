@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -16,7 +18,8 @@
             "keys": "ctrl+v"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -33,16 +36,20 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "colorScheme": "Tokyo Night"
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -63,9 +70,11 @@
             },
             {
                 "colorScheme": "Campbell",
-                "font": {
+                "font": 
+                {
                     "face": "FiraCode Nerd Font Mono",
-                    "features": {
+                    "features": 
+                    {
                         "cv13": 1,
                         "cv16": 1,
                         "cv18": 1,
@@ -81,7 +90,8 @@
                 "source": "Git"
             },
             {
-                "font": {
+                "font": 
+                {
                     "face": "FiraCode Nerd Font"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -90,7 +100,8 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "font": {
+                "font": 
+                {
                     "face": "FiraCode Nerd Font Mono"
                 },
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
@@ -117,9 +128,11 @@
                 "cursorShape": "filledBox",
                 "elevate": false,
                 "experimental.retroTerminalEffect": false,
-                "font": {
+                "font": 
+                {
                     "face": "FiraCode Nerd Font Mono",
-                    "features": {
+                    "features": 
+                    {
                         "cv13": 1,
                         "cv16": 1,
                         "cv18": 1,
@@ -138,10 +151,23 @@
                 "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "NuShell",
                 "useAcrylic": true
+            },
+            {
+                "guid": "{22b5b5c6-71a4-59a2-8e8b-6aad9ba306c4}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{b94a2aae-af7b-5e2a-ad72-feff6f8af3f9}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#050014",
             "black": "#230046",
