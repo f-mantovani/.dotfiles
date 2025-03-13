@@ -15,7 +15,7 @@ local opacity = 0.00
 config.window_background_opacity = opacity
 config.win32_system_backdrop = "Mica"
 
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_decorations = "RESIZE"
 config.integrated_title_button_style = "Gnome"
 config.front_end = "WebGpu"
 
@@ -36,6 +36,26 @@ config.keys = {
 		action = act.SplitHorizontal({
 			domain = "CurrentPaneDomain",
 		}),
+	},
+	{
+		mods = "SHIFT|ALT",
+		key = "n",
+		action = act.SpawnTab("CurrentPaneDomain"),
+	},
+	{
+		mods = "SHIFT|ALT",
+		key = "x",
+		action = act.CloseCurrentPane({ confirm = true }),
+	},
+	{
+		key = "LeftArrow",
+		mods = "SHIFT|ALT",
+		action = act.ActivateTabRelative(1),
+	},
+	{
+		key = "RightArrow",
+		mods = "SHIFT|ALT",
+		action = act.ActivateTabRelative(-1),
 	},
 	{
 		key = "LeftArrow",
