@@ -6,10 +6,15 @@ config.font = wezterm.font("FiraCode Nerd Font Mono")
 config.default_prog = { "nu" }
 config.color_scheme = "tokyonight"
 
-config.font = wezterm.font({
-	family = "FiraCode Nerd Font Mono",
-	harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
-})
+config.font = wezterm.font(
+	{
+		family = "0xProto Nerd Font Mono",
+	}
+	--  {
+	-- family = "FiraCode Nerd Font Mono",
+	-- harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
+	--  }
+)
 
 local opacity = 0.00
 config.window_background_opacity = opacity
