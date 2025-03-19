@@ -31,8 +31,19 @@ alias cd = z
 def lsw [] { eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions -a }
 
 def gbrowse [] {
-    let git_repo = git config --get remote.origin.url
-    start $git_repo
+    let git_repo = (git config --get remote.origin.url)
+
+    # Changes to HTTPS so it can be opened in the browser
+    if $git_repo =~ "git@github.com" {
+        let git_repo = $git_repo | str replace "git@" "https://" | str replace ":" "/"
+    }
+
+    if $git_repo != "" {
+        start $git_repo
+    } else {
+        echo "Error: Doesn't have a remote repository."
+    }
+
     return null
 }
 

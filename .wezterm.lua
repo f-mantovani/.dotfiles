@@ -8,7 +8,7 @@ config.color_scheme = "tokyonight"
 
 config.font = wezterm.font(
 	{
-		family = "0xProto Nerd Font Mono",
+		family = "0xProto Nerd Font",
 	}
 	--  {
 	-- family = "FiraCode Nerd Font Mono",
