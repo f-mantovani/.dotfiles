@@ -21,6 +21,13 @@ version = 3
 [[blocks]]
   type = 'prompt'
   alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    template = '{{.Icon}}  '
+    foreground = '#77E4F7'
+    type = 'os'
+    style = 'plain'
 
   [[blocks.segments]]
     template = '{{ .Path }} '
