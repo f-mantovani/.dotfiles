@@ -3,7 +3,7 @@ local act = wezterm.action
 local config = {}
 
 config.font = wezterm.font("FiraCode Nerd Font Mono")
-config.default_prog = { "nu" }
+config.default_prog = { "WSL:Ubuntu" }
 config.color_scheme = "tokyonight"
 
 config.font = wezterm.font(
