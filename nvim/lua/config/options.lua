@@ -4,3 +4,4 @@
 --
 vim.opt.wrap = true
 vim.opt.bri = true
+vim.opt.clipboard = "unnamedplus"

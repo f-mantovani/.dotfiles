@@ -2,19 +2,15 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local config = {}
 
-config.font = wezterm.font("FiraCode Nerd Font Mono")
-config.default_prog = { "WSL:Ubuntu" }
+config.font = wezterm.font({
+	family = "FiraCode Nerd Font Mono",
+	harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
+})
+
+config.default_prog = { "wsl.exe" }
 config.color_scheme = "tokyonight"
 
-config.font = wezterm.font(
-	{
-		family = "0xProto Nerd Font",
-	}
-	--  {
-	-- family = "FiraCode Nerd Font Mono",
-	-- harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
-	--  }
-)
+config.font = wezterm.font("0xProto Nerd Font")
 
 local opacity = 0.00
 config.window_background_opacity = opacity
@@ -45,7 +41,7 @@ config.keys = {
 	{
 		mods = "SHIFT|ALT",
 		key = "n",
-		action = act.SpawnTab("CurrentPaneDomain"),
+		action = act.SpawnTab("DefaultDomain"),
 	},
 	{
 		mods = "SHIFT|ALT",

@@ -3,12 +3,12 @@
 
 ## WSL - Ubuntu
 ```bash
-sudo install apt clang zsh brew build-essentials git
+sudo install apt clang zsh brew build-essentials git xclip
 ```
 
 ## Termux
 ```bash
-pkg install apt clang zsh brew build-essentials git
+pkg install apt clang zsh brew build-essentials git xclip
 ```
 
 ## Change to zsh
@@ -20,5 +20,7 @@ chsh "$(which zsh)"
 ```zsh
 git clone https://github.com/f-mantovani/.dotfiles.git
 ```
+
+
 
 

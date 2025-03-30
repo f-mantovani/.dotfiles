@@ -108,6 +108,7 @@ zstyle ':completion:*' verbose yes
 source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
