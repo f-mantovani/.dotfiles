@@ -1,5 +1,6 @@
 export PATH=$HOME/.local/bin:$PATH
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+BREW_PATH="/home/linuxbrew/.linuxbrew"
+export PATH="$BREW_PATH/bin:$PATH"
 
 gbrowse(){
     # Obter o URL remoto
@@ -88,7 +89,7 @@ _fzf_comprun() {
 # ZSH_CUSTOM=/path/to/new-custom-folder
 autoload -Uz compinit
 compinit
-zstyle ':completion:*' menu yes select
+zstyle ':completion:*' menu yes select search
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' verbose yes
@@ -100,13 +101,14 @@ zstyle ':completion:*' verbose yes
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-completions fzf)
   if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    FPATH="$BREW_PATH/share/zsh-completions:$FPATH"
 
     autoload -Uz compinit
     compinit
   fi
-source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source "$BREW_PATH/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$BREW_PATH/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 
 # User configuration
