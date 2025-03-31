@@ -50,7 +50,7 @@ gbrowse(){
 }
 
 gpush() {
-  local repo=$(git config --get remote.origin.url)
+  local repo=$(git branch --show-current)
   
   git add .
   git commit -m "$1"
