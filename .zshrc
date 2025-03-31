@@ -129,7 +129,7 @@ eval "$(zoxide init zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
-eval "$(oh-my-posh init zsh --config ~/.pl10k.omp.toml)"
+eval "$(oh-my-posh init zsh --config ~/.dotfiles/.pl10k.omp.toml)"
 
 source ~/.dotfiles/aliases.zsh
 
