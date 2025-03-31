@@ -2,23 +2,6 @@ export PATH=$HOME/.local/bin:$PATH
 BREW_PATH="/home/linuxbrew/.linuxbrew"
 export PATH="$BREW_PATH/bin:$PATH"
 
-gbrowse(){
-    # Obter o URL remoto
-  local repo=$(git config --get remote.origin.url)
-  # Verificar se o URL está no formato SSH
-  if [[ "$repo" =~ ^git@github\.com: ]]; then
-    # Converter o formato SSH para HTTPS
-    local https_repo="${repo/git@github.com:/https://github.com/}"
-    https_repo="${https_repo/.git/}"
-  else
-    # Se já estiver no formato HTTPS, apenas usar o URL original
-    local https_repo="$repo"
-  fi
-  
-  # Abrir o repositório no navegador
-  (explorer.exe "$https_repo" &)
-}
-
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
@@ -139,13 +122,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 
-alias winhome="z /mnt/c/Users/Felipe"
-
 export BAT_THEME="Nord"
-
-alias ls="eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias cd=z
-alias pn=pnpm
 
 eval "$(zoxide init zsh)"
 
@@ -154,4 +131,6 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 eval "$(oh-my-posh init zsh --config ~/.pl10k.omp.toml)"
 
-cd 
+source ~/.dotfiles/aliases.zsh
+
+cd
