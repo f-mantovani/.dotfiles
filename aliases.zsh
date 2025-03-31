@@ -7,6 +7,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
 
+
 # ----------------
 # | Windows Home |
 # ----------------
@@ -21,9 +22,18 @@ alias la="ls -a"
 
 
 # ----------
+# | Moving |
+# ----------
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+
+
+# ----------
 # | zoxide |
 # ----------
 alias cd=z
+alias j=z
 
 
 # ----------
@@ -32,6 +42,9 @@ alias cd=z
 alias pn=pnpm
 
 
+# -----------
+# |Functions|
+# -----------
 gbrowse(){
     # Obter o URL remoto
   local repo=$(git config --get remote.origin.url)
