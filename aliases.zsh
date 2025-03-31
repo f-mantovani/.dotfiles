@@ -32,9 +32,10 @@ alias rm="rm -iv"
 # ----------
 # | zoxide |
 # ----------
-alias cd=z
-alias j=z
-
+if command -v zoxide &> /dev/null; then
+    alias cd="z"
+    alias j="z"
+fi
 
 # ----------
 # |  pnpm  |
@@ -69,3 +70,4 @@ gpush() {
   git commit -m "$1"
   git push origin "$repo"
 }
+
