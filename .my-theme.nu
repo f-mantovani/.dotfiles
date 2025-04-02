@@ -4,13 +4,17 @@ if ($env.config? | is-not-empty) {
 }
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
-$env.POSH_THEME = (echo "C:\\Users\\Felipe\\.pl10k.omp.toml")
+$env.POSH_THEME = (echo "C:\\Users\\Felipe\\.dotfiles\\.pl10k.omp.toml")
 $env.PROMPT_INDICATOR = ""
-$env.POSH_SESSION_ID = (echo "63775dd7-2a6f-4e78-b4a4-e5492b6a4d0f")
+$env.POSH_SESSION_ID = (echo "486d9430-3fb8-4830-b76b-acd90ad338f1")
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 
-let _omp_executable: string = (echo "C:/Users/Felipe/scoop/shims/oh-my-posh")
+# disable all known python virtual environment prompts
+$env.VIRTUAL_ENV_DISABLE_PROMPT = 1
+$env.PYENV_VIRTUALENV_DISABLE_PROMPT = 1
+
+let _omp_executable: string = (echo "C:/Users/Felipe/scoop/apps/oh-my-posh/current/oh-my-posh.exe")
 
 # PROMPTS
 

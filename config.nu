@@ -21,13 +21,13 @@ $env.config.buffer_editor = "nvim"
 
 $env.config.shell_integration.osc133 = false
 
-source ~/.zoxide.nu
-
-source ~/.my-theme.nu
+source ~/.dotfiles/.zoxide.nu
+source ~/.dotfiles/.my-theme.nu
 
 alias pn = pnpm
 alias px = pnpx
-alias cd = z
+alias cd = z 
+alias j = z
 def lsw [] { eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions -a }
 
 def gbrowse [] {
@@ -59,11 +59,11 @@ def gpush [message: string] {
     git push origin $branch
 }
 
-use ~/.config/nushell/completions/git-completions.nu *
-use ~/.config/nushell/completions/bat-completions.nu *
-use ~/.config/nushell/completions/docker-completions.nu *
-use ~/.config/nushell/completions/npm-completions.nu *
-use ~/.config/nushell/completions/pnpm-completions.nu *
-use ~/.config/nushell/completions/scoop-completions.nu *
-use ~/.config/nushell/completions/yarn-v4-completions.nu *
-use ~/.config/nushell/completions/eza-completions.nu *
+use ~/.dotfiles/nushell/completions/git-completions.nu *
+use ~/.dotfiles/nushell/completions/bat-completions.nu *
+use ~/.dotfiles/nushell/completions/docker-completions.nu *
+use ~/.dotfiles/nushell/completions/npm-completions.nu *
+use ~/.dotfiles/nushell/completions/pnpm-completions.nu *
+use ~/.dotfiles/nushell/completions/scoop-completions.nu *
+use ~/.dotfiles/nushell/completions/yarn-v4-completions.nu *
+use ~/.dotfiles/nushell/completions/eza-completions.nu *

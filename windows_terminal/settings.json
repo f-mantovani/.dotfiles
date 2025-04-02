@@ -1,311 +1,297 @@
 {
-    "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        }
-    ],
-    "copyFormatting": "none",
-    "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "newTabMenu": 
-    [
-        {
-            "type": "remainingProfiles"
-        }
-    ],
-    "profiles": 
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [
     {
-        "defaults": 
-        {
-            "colorScheme": "Tokyo Night"
-        },
-        "list": 
-        [
-            {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Invite de commandes"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "colorScheme": "Campbell",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono",
-                    "features": 
-                    {
-                        "cv13": 1,
-                        "cv16": 1,
-                        "cv18": 1,
-                        "cv31": 1,
-                        "ss05": 1
-                    },
-                    "size": 12,
-                    "weight": "normal"
-                },
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
-            },
-            {
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font"
-                },
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono"
-                },
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "commandline": "C:\\msys64\\usr\\bin\\fish.exe --login",
-                "guid": "{096e7607-ab82-4a8d-aa69-de9ee4d8aa9f}",
-                "icon": "C:\\msys64\\msys2.ico",
-                "name": "MSYS2 (Fish)",
-                "startingDirectory": "C:\\Users\\Felipe"
-            },
-            {
-                "colorScheme": "Tokyo Night",
-                "commandline": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",
-                "cursorShape": "filledBox",
-                "elevate": false,
-                "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono",
-                    "features": 
-                    {
-                        "cv13": 1,
-                        "cv16": 1,
-                        "cv18": 1,
-                        "cv31": 1,
-                        "ss05": 1
-                    },
-                    "size": 12,
-                    "weight": "normal"
-                },
-                "guid": "{b91d4a7d-1af3-45e6-9dcd-5e98fc4d6bd3}",
-                "hidden": false,
-                "icon": "C:\\Users\\Felipe\\Downloads\\nu_logo.ico",
-                "name": "Nu Shell",
-                "opacity": 68,
-                "padding": "8",
-                "startingDirectory": "%USERPROFILE%",
-                "tabTitle": "NuShell",
-                "useAcrylic": true
-            },
-            {
-                "guid": "{22b5b5c6-71a4-59a2-8e8b-6aad9ba306c4}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{b94a2aae-af7b-5e2a-ad72-feff6f8af3f9}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            }
-        ]
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "id": "User.copy.644BA8F2",
+      "keys": "ctrl+c"
     },
-    "schemes": 
-    [
-        {
-            "background": "#050014",
-            "black": "#230046",
-            "blue": "#4F4A7F",
-            "brightBlack": "#372D46",
-            "brightBlue": "#8E87E0",
-            "brightCyan": "#9AD4E0",
-            "brightGreen": "#52E0C4",
-            "brightPurple": "#A776E0",
-            "brightRed": "#E05167",
-            "brightWhite": "#8C91FA",
-            "brightYellow": "#E0C386",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#58777F",
-            "foreground": "#736E7D",
-            "green": "#337E6F",
-            "name": "Lavandula",
-            "purple": "#5A3F7F",
-            "red": "#7D1625",
-            "selectionBackground": "#FFFFFF",
-            "white": "#736E7D",
-            "yellow": "#7F6F49"
+    {
+      "command": "paste",
+      "id": "User.paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "id": "User.splitPane.A6751878",
+      "keys": "alt+shift+d"
+    },
+    {
+      "command": "find",
+      "id": "User.find",
+      "keys": "ctrl+shift+f"
+    }
+  ],
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "colorScheme": "Tokyo Night"
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Invite de commandes"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
+        "colorScheme": "Campbell",
+        "font": {
+          "face": "FiraCode Nerd Font Mono",
+          "features": {
+            "cv13": 1,
+            "cv16": 1,
+            "cv18": 1,
+            "cv31": 1,
+            "ss05": 1
+          },
+          "size": 12,
+          "weight": "normal"
         },
-        {
-            "background": "#1A1B2C",
-            "black": "#414868",
-            "blue": "#7AA2F7",
-            "brightBlack": "#414868",
-            "brightBlue": "#7AA2F7",
-            "brightCyan": "#7DCFFF",
-            "brightGreen": "#73DACA",
-            "brightPurple": "#BB9AF7",
-            "brightRed": "#F7768E",
-            "brightWhite": "#C0CAF5",
-            "brightYellow": "#E0AF68",
-            "cursorColor": "#C0CAF5",
-            "cyan": "#7DCFFF",
-            "foreground": "#A9B1DC",
-            "green": "#73DACA",
-            "name": "Tokyo Night",
-            "purple": "#BB9AF7",
-            "red": "#F7768E",
-            "selectionBackground": "#28344A",
-            "white": "#C0CAF5",
-            "yellow": "#E0AF68"
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+        "hidden": false,
+        "name": "Git Bash",
+        "source": "Git"
+      },
+      {
+        "font": {
+          "face": "FiraCode Nerd Font"
         },
-        {
-            "background": "#24283B",
-            "black": "#414868",
-            "blue": "#7AA2F7",
-            "brightBlack": "#414868",
-            "brightBlue": "#7AA2F7",
-            "brightCyan": "#7DCFFF",
-            "brightGreen": "#73DACA",
-            "brightPurple": "#BB9AF7",
-            "brightRed": "#F7768E",
-            "brightWhite": "#C0CAF5",
-            "brightYellow": "#E0AF68",
-            "cursorColor": "#C0CAF5",
-            "cyan": "#7DCFFF",
-            "foreground": "#A9B1DC",
-            "green": "#73DACA",
-            "name": "Tokyo Night Storm",
-            "purple": "#BB9AF7",
-            "red": "#F7768E",
-            "selectionBackground": "#28344A",
-            "white": "#C0CAF5",
-            "yellow": "#E0AF68"
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "hidden": false,
+        "name": "PowerShell",
+        "source": "Windows.Terminal.PowershellCore"
+      },
+      {
+        "font": {
+          "face": "FiraCode Nerd Font Mono"
         },
-        {
-            "background": "#000000",
-            "black": "#000000",
-            "blue": "#7AA6DA",
-            "brightBlack": "#000000",
-            "brightBlue": "#7AA6DA",
-            "brightCyan": "#70C0B1",
-            "brightGreen": "#B9CA4A",
-            "brightPurple": "#C397D8",
-            "brightRed": "#D54E53",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#E7C547",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#70C0B1",
-            "foreground": "#EAEAEA",
-            "green": "#B9CA4A",
-            "name": "Tomorrow Night Bright",
-            "purple": "#C397D8",
-            "red": "#D54E53",
-            "selectionBackground": "#FFFFFF",
-            "white": "#FFFFFF",
-            "yellow": "#E7C547"
+        "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+        "hidden": false,
+        "name": "Ubuntu",
+        "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+      },
+      {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "hidden": true,
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "commandline": "C:\\msys64\\usr\\bin\\fish.exe --login",
+        "guid": "{096e7607-ab82-4a8d-aa69-de9ee4d8aa9f}",
+        "icon": "C:\\msys64\\msys2.ico",
+        "name": "MSYS2 (Fish)",
+        "startingDirectory": "C:\\Users\\Felipe"
+      },
+      {
+        "colorScheme": "Tokyo Night",
+        "commandline": "C:\\Users\\Felipe\\scoop\\shims\\nu.exe",
+        "cursorShape": "filledBox",
+        "elevate": false,
+        "experimental.retroTerminalEffect": false,
+        "font": {
+          "face": "FiraCode Nerd Font Mono",
+          "features": {
+            "cv13": 1,
+            "cv16": 1,
+            "cv18": 1,
+            "cv31": 1,
+            "ss05": 1
+          },
+          "size": 12,
+          "weight": "normal"
         },
-        {
-            "background": "#141414",
-            "black": "#141414",
-            "blue": "#44474A",
-            "brightBlack": "#262626",
-            "brightBlue": "#5A5E62",
-            "brightCyan": "#8A989B",
-            "brightGreen": "#CCD88C",
-            "brightPurple": "#D0DC8E",
-            "brightRed": "#DE7C4C",
-            "brightWhite": "#FFFFD4",
-            "brightYellow": "#E2C47E",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#778385",
-            "foreground": "#FFFFD4",
-            "green": "#AFB97A",
-            "name": "Twilight",
-            "purple": "#B4BE7C",
-            "red": "#C06D44",
-            "selectionBackground": "#FFFFFF",
-            "white": "#FFFFD4",
-            "yellow": "#C2A86C"
-        },
-        {
-            "background": "#000000",
-            "black": "#000000",
-            "blue": "#5555CC",
-            "brightBlack": "#555555",
-            "brightBlue": "#5555FF",
-            "brightCyan": "#55FFFF",
-            "brightGreen": "#55FF55",
-            "brightPurple": "#FF55FF",
-            "brightRed": "#FF5555",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFFF55",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#7ACACA",
-            "foreground": "#B3B3B3",
-            "green": "#55CC55",
-            "name": "Wez",
-            "purple": "#CC55CC",
-            "red": "#CC5555",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#CDCD55"
-        }
-    ],
-    "themes": []
+        "guid": "{b91d4a7d-1af3-45e6-9dcd-5e98fc4d6bd3}",
+        "hidden": false,
+        "icon": "C:\\Users\\Felipe\\Downloads\\nu_logo.ico",
+        "name": "Nu Shell",
+        "opacity": 68,
+        "padding": "8",
+        "startingDirectory": "%USERPROFILE%",
+        "tabTitle": "NuShell",
+        "useAcrylic": true
+      },
+      {
+        "guid": "{22b5b5c6-71a4-59a2-8e8b-6aad9ba306c4}",
+        "hidden": false,
+        "name": "Developer Command Prompt for VS 2022",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{b94a2aae-af7b-5e2a-ad72-feff6f8af3f9}",
+        "hidden": false,
+        "name": "Developer PowerShell for VS 2022",
+        "source": "Windows.Terminal.VisualStudio"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#050014",
+      "black": "#230046",
+      "blue": "#4F4A7F",
+      "brightBlack": "#372D46",
+      "brightBlue": "#8E87E0",
+      "brightCyan": "#9AD4E0",
+      "brightGreen": "#52E0C4",
+      "brightPurple": "#A776E0",
+      "brightRed": "#E05167",
+      "brightWhite": "#8C91FA",
+      "brightYellow": "#E0C386",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#58777F",
+      "foreground": "#736E7D",
+      "green": "#337E6F",
+      "name": "Lavandula",
+      "purple": "#5A3F7F",
+      "red": "#7D1625",
+      "selectionBackground": "#FFFFFF",
+      "white": "#736E7D",
+      "yellow": "#7F6F49"
+    },
+    {
+      "background": "#1A1B2C",
+      "black": "#414868",
+      "blue": "#7AA2F7",
+      "brightBlack": "#414868",
+      "brightBlue": "#7AA2F7",
+      "brightCyan": "#7DCFFF",
+      "brightGreen": "#73DACA",
+      "brightPurple": "#BB9AF7",
+      "brightRed": "#F7768E",
+      "brightWhite": "#C0CAF5",
+      "brightYellow": "#E0AF68",
+      "cursorColor": "#C0CAF5",
+      "cyan": "#7DCFFF",
+      "foreground": "#A9B1DC",
+      "green": "#73DACA",
+      "name": "Tokyo Night",
+      "purple": "#BB9AF7",
+      "red": "#F7768E",
+      "selectionBackground": "#28344A",
+      "white": "#C0CAF5",
+      "yellow": "#E0AF68"
+    },
+    {
+      "background": "#24283B",
+      "black": "#414868",
+      "blue": "#7AA2F7",
+      "brightBlack": "#414868",
+      "brightBlue": "#7AA2F7",
+      "brightCyan": "#7DCFFF",
+      "brightGreen": "#73DACA",
+      "brightPurple": "#BB9AF7",
+      "brightRed": "#F7768E",
+      "brightWhite": "#C0CAF5",
+      "brightYellow": "#E0AF68",
+      "cursorColor": "#C0CAF5",
+      "cyan": "#7DCFFF",
+      "foreground": "#A9B1DC",
+      "green": "#73DACA",
+      "name": "Tokyo Night Storm",
+      "purple": "#BB9AF7",
+      "red": "#F7768E",
+      "selectionBackground": "#28344A",
+      "white": "#C0CAF5",
+      "yellow": "#E0AF68"
+    },
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#7AA6DA",
+      "brightBlack": "#000000",
+      "brightBlue": "#7AA6DA",
+      "brightCyan": "#70C0B1",
+      "brightGreen": "#B9CA4A",
+      "brightPurple": "#C397D8",
+      "brightRed": "#D54E53",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#E7C547",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#70C0B1",
+      "foreground": "#EAEAEA",
+      "green": "#B9CA4A",
+      "name": "Tomorrow Night Bright",
+      "purple": "#C397D8",
+      "red": "#D54E53",
+      "selectionBackground": "#FFFFFF",
+      "white": "#FFFFFF",
+      "yellow": "#E7C547"
+    },
+    {
+      "background": "#141414",
+      "black": "#141414",
+      "blue": "#44474A",
+      "brightBlack": "#262626",
+      "brightBlue": "#5A5E62",
+      "brightCyan": "#8A989B",
+      "brightGreen": "#CCD88C",
+      "brightPurple": "#D0DC8E",
+      "brightRed": "#DE7C4C",
+      "brightWhite": "#FFFFD4",
+      "brightYellow": "#E2C47E",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#778385",
+      "foreground": "#FFFFD4",
+      "green": "#AFB97A",
+      "name": "Twilight",
+      "purple": "#B4BE7C",
+      "red": "#C06D44",
+      "selectionBackground": "#FFFFFF",
+      "white": "#FFFFD4",
+      "yellow": "#C2A86C"
+    },
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#5555CC",
+      "brightBlack": "#555555",
+      "brightBlue": "#5555FF",
+      "brightCyan": "#55FFFF",
+      "brightGreen": "#55FF55",
+      "brightPurple": "#FF55FF",
+      "brightRed": "#FF5555",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFF55",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#7ACACA",
+      "foreground": "#B3B3B3",
+      "green": "#55CC55",
+      "name": "Wez",
+      "purple": "#CC55CC",
+      "red": "#CC5555",
+      "selectionBackground": "#FFFFFF",
+      "white": "#CCCCCC",
+      "yellow": "#CDCD55"
+    }
+  ],
+  "themes": []
 }
