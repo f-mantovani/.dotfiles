@@ -10,3 +10,9 @@ function gac(){
   git commit -m "$1"
 }
 
+function gpush() {
+  local repo=$(git branch --show-current)
+  gac "$1"
+  git push origin $repo
+}
+
