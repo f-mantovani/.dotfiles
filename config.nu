@@ -21,14 +21,18 @@ $env.config.buffer_editor = "nvim"
 
 $env.config.shell_integration.osc133 = false
 
+
 source ~/.dotfiles/.zoxide.nu
 source ~/.dotfiles/.my-theme.nu
+
 
 alias pn = pnpm
 alias px = pnpx
 alias cd = z 
 alias j = z
 def lsw [] { eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions -a }
+def ba [file: string] { bat --theme Nord $file }
+
 
 def gbrowse [] {
     let git_repo = (git config --get remote.origin.url)
@@ -67,3 +71,4 @@ use ~/.dotfiles/nushell/completions/pnpm-completions.nu *
 use ~/.dotfiles/nushell/completions/scoop-completions.nu *
 use ~/.dotfiles/nushell/completions/yarn-v4-completions.nu *
 use ~/.dotfiles/nushell/completions/eza-completions.nu *
+

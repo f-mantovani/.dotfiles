@@ -38,7 +38,10 @@ version = 3
     [blocks.segments.properties]
       style = 'full'
 
-  [[blocks.segments]]
+      [blocks.segments.properties.mapped_locations]
+        "C:\\Users\\Felipe" = "win ~"
+
+[[blocks.segments]]
     template = '{{ .HEAD }} '
     foreground = '#FFE700'
     type = 'git'
