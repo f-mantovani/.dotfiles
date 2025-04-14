@@ -30,6 +30,7 @@ alias pn = pnpm
 alias px = pnpx
 alias cd = z 
 alias j = z
+alias sc = sfsu
 def lsw [] { eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions -a }
 def ba [file: string] { bat --theme Nord $file }
 
