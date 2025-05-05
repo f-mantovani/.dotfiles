@@ -44,7 +44,7 @@ def gbrowse [] {
     }
 
     if $git_repo != "" {
-        start $git_repo
+        ^start brave $git_repo
     } else {
         echo "Error: Doesn't have a remote repository."
     }
@@ -73,3 +73,5 @@ use ~/.dotfiles/nushell/completions/scoop-completions.nu *
 use ~/.dotfiles/nushell/completions/yarn-v4-completions.nu *
 use ~/.dotfiles/nushell/completions/eza-completions.nu *
 
+
+fnm env --shell powershell | fnm-nushell | from json | load-env

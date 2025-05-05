@@ -51,12 +51,12 @@ config.keys = {
 	{
 		key = "LeftArrow",
 		mods = "SHIFT|ALT",
-		action = act.ActivateTabRelative(1),
+		action = act.ActivateTabRelative(-1),
 	},
 	{
 		key = "RightArrow",
 		mods = "SHIFT|ALT",
-		action = act.ActivateTabRelative(-1),
+		action = act.ActivateTabRelative(1),
 	},
 	{
 		key = "LeftArrow",
