@@ -8,6 +8,7 @@ config.font = wezterm.font({
 })
 
 config.default_prog = { "nu" }
+-- config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 config.color_scheme = "tokyonight"
 
 config.font = wezterm.font("0xProto Nerd Font")

@@ -28,9 +28,10 @@ source ~/.dotfiles/.my-theme.nu
 
 alias pn = pnpm
 alias px = pnpx
-alias cd = z 
+alias cd = z
 alias j = z
 alias sc = sfsu
+alias scu = scoop update
 def lsw [] { eza --color=always -G --long --no-filesize --icons=always --no-time --no-user --no-permissions -a }
 def ba [file: string] { bat --theme Nord $file }
 
@@ -73,5 +74,6 @@ use ~/.dotfiles/nushell/completions/scoop-completions.nu *
 use ~/.dotfiles/nushell/completions/yarn-v4-completions.nu *
 use ~/.dotfiles/nushell/completions/eza-completions.nu *
 
+$env.RIO_CONFIG_HOME = "~/.dotfiles/rio"
 
 fnm env --shell powershell | fnm-nushell | from json | load-env
