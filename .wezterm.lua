@@ -1,17 +1,19 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
+local mux = wezterm.mux
 local config = {}
 
-config.font = wezterm.font({
-	family = "FiraCode Nerd Font Mono",
-	harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
-})
+-- config.font = wezterm.font({
+-- 	family = "FiraCode Nerd Font Mono",
+-- 	harfbuzz_features = { "calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05" },
+-- 	weight = "Regular",
+-- })
 
 config.default_prog = { "nu" }
 -- config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 config.color_scheme = "tokyonight"
 
-config.font = wezterm.font("0xProto Nerd Font")
+config.font = wezterm.font("0xProto Nerd Font", { weight = "Light" })
 
 local opacity = 0.00
 config.window_background_opacity = opacity
@@ -26,15 +28,15 @@ config.tab_bar_at_bottom = true
 
 config.keys = {
 	{
-		key = "l",
-		mods = "SHIFT|ALT",
+		key = "d",
+		mods = "CTRL|SHIFT",
 		action = act.SplitVertical({
 			domain = "CurrentPaneDomain",
 		}),
 	},
 	{
-		key = "d",
-		mods = "SHIFT|ALT",
+		key = "r",
+		mods = "CTRL|SHIFT",
 		action = act.SplitHorizontal({
 			domain = "CurrentPaneDomain",
 		}),
@@ -123,6 +125,11 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 
 	-- Caso o título não seja encontrado, retorna "unknown"
 	return "unknown"
+end)
+
+wezterm.on("gui-startup", function()
+	local tab, pane, window = mux.spawn_window({})
+	window:gui_window():maximize()
 end)
 
 return config

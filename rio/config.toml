@@ -33,7 +33,7 @@ padding-x = 15
 # (default is [0, 0])
 #
 # Example:
-padding-y = [5, -5]
+padding-y = [5, -4]
 
 # Option as Alt
 #
@@ -206,10 +206,10 @@ features = ["calt=1", "liga=1", "clig=1", "cv13", "cv31", "cv16", "cv18", "ss05"
 # Example:
 [navigation]
 mode = "Bookmark"
-clickable = true
+use-fork = false
 hide-if-single = true
 use-current-path = true
-navigation.unfocused-split-opacity = 0
+unfocused-split-opacity = 0.1
 
 # Shell
 #
