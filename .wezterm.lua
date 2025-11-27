@@ -9,8 +9,8 @@ local config = {}
 -- 	weight = "Regular",
 -- })
 
-config.default_prog = { "nu" }
--- config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
+-- config.default_prog = { "nu", "--config", "C:\\Users\\Felipe\\.dotfiles\\config.nu" }
+config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 config.color_scheme = "tokyonight"
 
 config.font = wezterm.font("0xProto Nerd Font", { weight = "Light" })

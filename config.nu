@@ -18,13 +18,10 @@
 # them for future reference.
 
 $env.config.buffer_editor = "nvim"
-
+$env.config.show_banner = false
 $env.config.shell_integration.osc133 = false
 
-
 source ~/.dotfiles/.zoxide.nu
-source ~/.dotfiles/.my-theme.nu
-
 
 alias pn = pnpm
 alias px = pnpx
@@ -74,6 +71,6 @@ use ~/.dotfiles/nushell/completions/scoop-completions.nu *
 use ~/.dotfiles/nushell/completions/yarn-v4-completions.nu *
 use ~/.dotfiles/nushell/completions/eza-completions.nu *
 
-$env.RIO_CONFIG_HOME = "~/.dotfiles/rio"
+# $env.RIO_CONFIG_HOME = "~/.dotfiles/rio"
 
 fnm env --shell powershell | fnm-nushell | from json | load-env
