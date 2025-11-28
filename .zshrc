@@ -1,9 +1,3 @@
-export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
-USER="$(whoami)"
-export PATH="/c/Users/${USER}/scoop/shims:$PATH"
-
-export win="/c/Users/${USER}"
-export DOTFILES="$win/.dotfiles"
 export BAT_THEME="Nord"
 
 # Carregar fzf apenas quando necessário
@@ -19,11 +13,6 @@ fi
 # Carregar fnm apenas quando necessário
 if command -v fnm &>/dev/null; then
   eval "$(fnm env --use-on-cd --shell zsh)"
-fi
-
-# Carregar oh-my-posh apenas quando necessário
-if command -v oh-my-posh &>/dev/null; then
-  eval "$(oh-my-posh init zsh --config ~/.pl10k.omp.toml)"
 fi
 
 # -- FD --
@@ -82,10 +71,10 @@ _fzf_comprun() {
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
-source "$DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "$DOTFILES/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "$DOTFILES/zsh-completions/zsh-completions.plugin.zsh"
-source "$DOTFILES/.aliases.zsh"
+source "~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "~/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "~/.dotfiles/zsh-completions/zsh-completions.plugin.zsh"
+source "~/.dotfiles/.aliases.zsh"
 
 autoload -Uz compinit
 compinit -C
