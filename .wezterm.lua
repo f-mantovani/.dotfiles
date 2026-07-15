@@ -9,15 +9,15 @@ local config = {}
 -- 	weight = "Regular",
 -- })
 
--- config.default_prog = { "nu", "--config", "C:\\Users\\Felipe\\.dotfiles\\config.nu" }
-config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
+config.default_prog = { "wsl" }
+-- config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 config.color_scheme = "tokyonight"
 
 config.font = wezterm.font("0xProto Nerd Font", { weight = "Light" })
 
 local opacity = 0.00
 config.window_background_opacity = opacity
-config.win32_system_backdrop = "Mica"
+-- config.win32_system_backdrop = "Mica"
 
 config.window_decorations = "RESIZE"
 config.integrated_title_button_style = "Gnome"

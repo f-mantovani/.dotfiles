@@ -8,6 +8,6 @@ return {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
     picker = { enabled = true, layout = { preset = "ivy" } },
-    terminal = { enabled = true, shell = "C:/Users/Felipe/scoop/apps/nu/current/nu.exe" },
+    terminal = { enabled = true },
   },
 }

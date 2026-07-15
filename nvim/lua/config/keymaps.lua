@@ -7,3 +7,5 @@ vim.keymap.set("n", "<leader>rn", function()
 end, { expr = true })
 
 vim.keymap.set("i", "jk", "<Esc>", { noremap = false })
+
+vim.keymap.set({ "n", "v" }, "<leader>ck", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })

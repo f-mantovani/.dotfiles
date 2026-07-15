@@ -1,31 +1,39 @@
+if [[ $(pwd) == /mnt/c/* ]]; then
+  cd ~
+fi
+
 export BAT_THEME="Nord"
+export PATH="$PATH:/opt/nvim"
 
-# Carregar fzf apenas quando necessário
-if command -v fzf &>/dev/null; then
-  source <(fzf --zsh)
-fi
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
-# Carregar zoxide apenas quando necessário
-if command -v zoxide &>/dev/null; then
-  eval "$(zoxide init zsh)"
-fi
+# zsh-completions
+fpath=(/home/hermano/.config/zsh/zsh-completions/src $fpath)
 
-# Carregar fnm apenas quando necessário
-if command -v fnm &>/dev/null; then
-  eval "$(fnm env --use-on-cd --shell zsh)"
-fi
+autoload -Uz compinit
+compinit -C
+zstyle ':completion:*' menu yes select search
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' verbose yes
 
-# -- FD --
-export FZF_DEFAULT_COMMAND='fd --hidden --strip-cwd-prefix --exclude .git --type f'
+# zoxide, jump to repositories
+eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# -- FD-FIND --
+export FZF_DEFAULT_COMMAND='fdfind --hidden --strip-cwd-prefix --exclude .git --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_ALT_C_COMMAND="fdfind --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 _fzf_compgen_path(){
-    fd --hidden --exclude .git "$S1"
+    fdfind --hidden --exclude .git "$S1"
 }
 
 _fzf_compgen_dir(){
-    fd --type=d --hidden --exclude .git "$S1"
+    fdfind --type=d --hidden --exclude .git "$S1"
 }
 
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'"
@@ -46,46 +54,23 @@ _fzf_comprun() {
   esac
 }
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+#### Aliases #####
+alias ls="eza --color=always --no-git --icons=always"
+alias bat="batcat"
+alias j=z
+alias cd=z
+alias pn=pnpm
+px () {
+  pnpm dlx "$@"
+}
 
-# Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+alias python="python3"
+######
 
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-source "~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "~/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "~/.dotfiles/zsh-completions/zsh-completions.plugin.zsh"
-source "~/.dotfiles/.aliases.zsh"
-
-autoload -Uz compinit
-compinit -C
-zstyle ':completion:*' menu yes select search
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' verbose yes
-
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
 
 setopt hist_ignore_all_dups # remove older duplicate entries from history
 setopt hist_reduce_blanks # remove superfluous blanks from history items
@@ -95,3 +80,58 @@ setopt correct_all # autocorrect commands
 setopt appendhistory
 unsetopt BEEP
 
+##### Bind keys for history search
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+# Mapeia as setas para cima e para baixo
+bindkey '^P' up-line-or-beginning-search # Seta para cima
+bindkey '^N' down-line-or-beginning-search # Seta para baixo
+
+# sourcing zsh helpers
+# zsh-autosuggestions
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# syntax highlighting
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#
+
+### Forces  Cypress to run without gpu 
+export CYPRESS_NO_GPU=1
+export LIBGL_ALWAYS_SOFTWARE=1
+export ELECTRON_EXTRA_LAUNCH_ARGS="--disable-gpu --disable-software-rasterizer"
+###
+
+
+# fnm
+FNM_PATH="/home/hermano/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+	export PATH="$FNM_PATH:$PATH"
+	eval "$(fnm env)"
+fi
+
+# starship, prompt
+eval "$(starship init zsh)"
+
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# opencode
+export PATH=/home/hermano/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/hermano/.local/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/hermano/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
